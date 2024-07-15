@@ -14,6 +14,25 @@ computed using a composite of risk-return metrics. The results across the tested
 stocks, which were picked from various industry sectors, yielded variable returns; some
 extensively outperforming the S&P 500 benchmark and some not.
 
-# Brief overview of Repo:
-Each of the Ipynb files was used to rebalance and extract insights from various baskets of stocks. 
+# Overview of Repo files
+
+Note that each of the Ipynb files was used to rebalance and extract insights from various baskets of stocks. 
 The only difference in each of the files is the list of stock tickers used and, therefore, the numerical and visual outputs
+
+Q: Clear and unambiguous instructions on how to reproduce the predictions from start 
+to finish including data pre-processing, feature extraction, model training and 
+prediction generation. Point out the corresponding file names
+
+A: To reproduce the results we have import all the packages listed in the requirements.txt. Open all the ipynb notebooks. And run all the cells. We use yfinance library to download all the required data into a variable so no additional files are required.
+
+
+Q: Environment details regarding how the model was developed and trained, including 
+OS, memory (RAM), disk space, CPU/GPU used, and any required environment 
+configurations required to execute the code
+
+A: No environment requirement are needed however the faster the runtime the faster the MC simulation will run. Hence we recommend to use a GPU for the reproduction of the code
+
+Q: Data Files... Which data files are being used?
+
+A: None. Each notebook retrieves data from yfinance library.
+
